@@ -1,0 +1,38 @@
+/*tipos de medidas*/
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+/*las medidas relativas basicamente son colocarle una medida predetermida a la caja principal que mayormente son los div con sus id predeterminados
+ con la medida px y a los hijos de esta ponerle la medida em
+  1em sera igual a el valor que le hayamos puesto al px de la caja padre el id del div */
+
+#text-informative{
+	font-size: 10px;/*1em es equivalente a 20px ahora*/
+	background-color: yellow;
+	width: 90vw;
+	height: 90vh; 
+}
+
+.text-informative__text{
+	font-size: 1em;
+}
+
+
+
+#text-contact{
+	font-size: 5px;
+	background-color: green;
+	width: 90vw;
+	height: 90vh; 
+}
+
+.text-contact__h2:first-child{
+	font-size: 3em;
+}
+
+.text-contact__h2{
+	font-size: 2em;
+}
+

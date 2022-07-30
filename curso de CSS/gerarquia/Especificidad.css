@@ -1,0 +1,35 @@
+#ejem1{
+	color:black;
+}
+
+#ejem2id{
+	color:blue;
+}
+
+.ejem2class{
+	color:black;
+	}
+
+.ejem3{
+	color: black;
+}
+
+[ejemplo="3"]{
+	color:blue;
+}
+
+.ejem4{
+	color:black;
+}
+
+[ejemplando="ejem4"]{
+	color:blue;
+}
+
+#ejemcon_important{
+	color:black;
+}
+
+.important-class{
+	color:blue !important;
+}

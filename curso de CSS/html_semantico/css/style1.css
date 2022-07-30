@@ -1,0 +1,34 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url("paper.jpeg");
+	background-attachment: fixed;
+}
+
+#specialText{
+	font-size: 25px;
+	margin: 50px;
+	white-space: pre-wrap;
+}
+
+a{
+	margin-left: 5px;
+	font-size: 20px;
+   border-bottom-style: groove;
+   border-color:blue;
+   text-decoration: none;
+}
+li{
+	display: inline;
+	padding-right: 40px;
+	font-size: 24px;
+}
+ul{
+	margin:20px;
+
+}
+
+

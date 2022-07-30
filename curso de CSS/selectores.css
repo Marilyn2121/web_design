@@ -1,0 +1,49 @@
+/*
+el selector es el elemento o elementos que queremos cambiar
+selector{
+la propiedad es lo que le queremos cambiar espesificamente por ejem borde color y todo ese pedo
+		propiedad: valor; el valor obio lo que se le cambia
+}*/
+
+/*
+tambien tenemos tipos de selectores
+-universal (*) si solo se pone el * selecciona todos los valores de la pagina
+-de tipo (son cuando seleccionamos una parte o una etiqueta de html y a ese le hacemos los cambios)
+-clases(.y_el_nombre_de_la_clase)
+-ID(#nombre)estos son unicos entoces tenemos que usarlos solo para elementos que no se repiten y se recomienda para usarlo solo para un elemento
+-tambien por atributo ([nombnre="valor"]) es talcual se pone el atributo en html asi se pondra aqui pero como propiedad
+-descendencia (tipo1 tipo2)esto se hace por los tipos de atributos que estan dentro de otros atrbutos lo que se hace es primero se manda a llamar el atributo contenedor y luego lo que esta adrentro que estamos buscando
+tambien se puede poner una clase o un id y algo que este dentro de ellos
+-pseudo-clases ()los eventos son los que se ponen con estos nombres los que elegimos para mandar a llamar el elemento en css y cambiarlo 
+*/
+
+/*----------ejemplo de universal------------*/
+*{
+	color:red;
+}
+
+/*----------ejemplo de de tipo ------------*/
+p{
+	color:blue;
+}
+
+/*----------ejemplo de clases ------------*/
+.boton{
+	color:green;
+}
+
+/*----------ejemplo de por atributo ------------*/
+[type="submit"]{
+	color:yellow;
+}
+
+/*----------ejemplo de decendencia ------------*/
+p b{
+	color:pink;
+}
+
+/*----------ejemplo de pseudo-clases ------------*/
+
+b:hover {
+	color:black;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<nav>
+		<ul>
+			<li><a href="Especificidad.html">Especificidad</a></li>
+			<li><a href="metodologiaBEN.html">Metodologia de Ben</a></li>
+		</ul>
+	</nav>
+		<title>especifidades</title>
+		<link rel="stylesheet" type="text/css" href="Especificidad.css">
+	</head>
+	<body>
+		<h1>definiciones de las especificidad</h1>
+		<p>si nosotros le colocamos un monton de colores a las etiqueta todas seran aplicadas pero esta pasa muy muy rapido y obiamente queda el ultimo</p>
+
+		<h3>que es</h3>
+		<p>la especificidad se define como el navegador colocando segun la gerarquia Ciertos elementos mas importante para el como ya dije por la gerarquia basicamente es las reglas que tine el navegador para colorle estilios a el elemento especifico</p>
+
+		<h3>cabe resaltar que si hay dos estilos aplicados a un mismo elemto se aplicara el que mas especificidad tenga</h3>
+
+		<img src="gerarquia.png">
+
+		<h3>tenemos aqui la lista explicada de la gerarquia de el navegador para poner los estilos</h3>
+		<p>
+			-el !important es el que le gana a todos como ejemplo tenemos este <b id="ejemcon_important" class="important-class">asi</b> poniendo important luego de cualquier forma en la que mandemos a llamar nuestra etiqueta ya sea como elemento tal cual o con class o con cualquier cosa<br><br>
+
+			-cuando ponemos el estilo directamente en el archivo de html este sera el de mayor gerarquia por lo tanto se colocara primero <b style="color:blue;" id="ejem1">vea aqui</b> este ejemplo el color que le puse con html es azul y el que le puse con css es rojo y que puse aqui en html<br><br>
+
+			-lo que usan id claramente el que se respeta mas es el anterior pero el que le sigue es este en <b class="ejem2class" id="ejem2id">este ejemplo </b>podemos ver que tomo el color que pusimos con el id azul no el de la class negro<br><br>
+
+			-la siguientes son los atributos clases y pseudo-clases ejem: <b class="ejem4" ejemplando="ejem4" >este de aqui </b> cabe resaltar que estas estan en el mismo nivel por ende se toman como la misma y se juzgaran en cascada osea que la ultima sera tomada</b><br>
+		</p>
+
+		<h3></h3>
+		<p></p>
+	</body>
+	</html>

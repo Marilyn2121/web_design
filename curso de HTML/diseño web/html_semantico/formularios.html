@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="icon" href="flores.ico">
+		<title>formulario</title>
+		<nav>
+			<ul>
+
+				<li><a href="formularios.html">formularios</a></li>
+				<li><a href="pagina.html">pagina</a></li>
+				<li><a href="nav.html">la de inicio</a></li>
+				<li><a href="micuenta.html">la cuenta</a></li>
+			</ul>
+		</nav>
+	</head>
+	<body>
+	<!-- hay tres tipos de datos en informatica el input(entrada) el procesamiento y el output(salida) -->
+	<!-- name es para identificar el input en back end base de datos o js -->
+		<form>
+				<p>texto</p>
+				<input type="text">
+				<p>para contrasena</p>
+				<input type="password">
+				<p>numeros</p>
+				<input type="number">
+				<p>pone el arroba y si no lo trae lo exige</p>
+				<input type="email">
+				<p>para elegir un color de una gama</p>
+				<input type="color">
+				<!-- el range es como un rango y se debe usar la barrita esto se puede ligar a un butto que mandara el numero en el que te hayas detenido y lo enviara a almacena o a imprimir no aparece ningun numero ni nada solo el rango -->
+				<p>es un rango</p>
+				<input type="range" min="1" max="5">
+				<p>fecha</p>
+				<input type="date">
+				<p>horas</p>
+				<input type="time"><br><br><br>
+				<!-- una lista desplegable -->
+				<label for="cars">Choose a car:</label>
+				  <select id="cars" name="cars">
+				    <option value="volvo">Volvo</option>
+				    <option value="saab">Saab</option>
+				    <option value="fiat">Fiat</option>
+				    <option value="audi">Audi</option>
+				  </select>
+				<!-- el input button siempre ira acomparado del value y este contendra lo que nosotros queremos que este muestre -->
+				<p>un boton</p>
+				<input type="button" value="">
+				<p>boton para enviar la informacion</p>
+				<input type="submit">
+		</form>
+	</body>
+</html>

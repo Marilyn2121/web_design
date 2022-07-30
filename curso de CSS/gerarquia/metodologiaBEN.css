@@ -1,0 +1,6 @@
+.form__input:first-child{
+	color:blue;
+}
+.form__input--active{
+	color:red;
+}
