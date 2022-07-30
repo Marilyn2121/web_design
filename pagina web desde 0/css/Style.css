@@ -1,0 +1,286 @@
+*{
+	 margin: 0px;
+	 padding: 0px;
+	 box-sizing: border-box;
+}
+body{
+	font-family: cursive;/*puedes descargar las fonts*/
+}
+/*es necesario que la palabra 'contenedor' este en el contenedor principal el que agrupa todo
+y que este separado de cualquier otra cosa que el sistema solo capte esa palabra*/
+.contenedor{
+	padding: 0px 10px 60px 0px;/*es para que todas las etiquetas que llevan contenedor*/
+	margin:auto;	/*tengan un espacio arriba un padding entre cada seccion por que*/
+	width: 90%;  	/*a las secciones es a las que les pusimos el contenedor*/
+	overflow: hidden;
+	max-width:1000px;/*el ancho maximo esto establese que si un elemento revasa el ancho maximo
+					sera ajustado el elemento hasta que alcanze el ancho requerido el maixmo*/
+}
+.titulo{
+	color: hsl(352, 59%, 72%);
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 40px;
+
+}
+/*header la ola de la pagina*/
+header{
+	width: 100%;
+	height: 700px;
+	background: hsl(32, 52%, 60%,0.60);  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, hsl(32, 52%, 60%,0.60), hsl(352, 59%, 72%,0.60), hsl(6, 86%, 37%,0.60)), url(../Imagenes/portada.jpg);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: cover;
+	background-attachment: fixed; /*esto permite que la imagen baje segun baje el usuario*/
+	background-position: 30px: 	
+}
+
+header .txts-header{
+	display:flex;
+	height: 550px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.txts-header h1{
+	font-size: 50px;
+	color: #fff;
+}
+.txts-header h2{
+	font-size: 30px;
+	font-weight: 100;
+	color: #fff;
+}
+
+.wave{
+	height: 150px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.svgWave{ 
+	height: 100%;
+	width: 100%;
+}
+.pathWave{
+
+	 stroke: none;
+	 fill: #FFF;
+}
+/*MENU*/
+nav{
+	text-align: right;
+	padding: 30px 50px 0px 0px;
+
+}
+
+nav a{
+	font-family: sans-serif;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	margin-right: 30px;
+	font-size: 17px;
+	transition: transform .5s;
+	transform: scale(1);
+	display: inline-block;
+    cursor: pointer;
+}
+nav a:hover{
+	text-decoration: overline;
+	text-decoration-color: hsl(6, 86%, 37%);
+	transform: scale(1.4);
+}
+/*acerca de nosotros*/
+.contenedor-sobre-nosotros{
+	display: inline-flex;
+	justify-content: space-around;/*que reparta el espacio*/
+}
+.img-about-us{
+	width: 30%;
+}
+.contenedor-sobre-nosotros .contenido{
+	width: 40%;
+}
+.contenido-about-us h3{
+	margin: 0px 20px;
+}
+.contenido-about-us h3 span{
+	background: hsl(352, 59%, 72%);
+	color:#fff;
+	border-radius: 60%;
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	padding: 2px;
+	box-shadow: 7px 5px 10px 0px rgb(0 0 0 / 50%);
+	margin-right: 15px;
+}
+
+.contenido-about-us p{
+	padding: 20px;
+	font-weight: 200;/*el weight sirve para el grueso de la letra*/
+	text-align: justify;
+
+}
+
+/*GALERIA*/
+.que-ofrecemos{
+	padding: 30px 30px;
+	background: #f2f2f2;
+}
+.galeria{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.imagen-port{
+	width: 31%;
+	height: 300px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	box-shadow: 13px 11px 10px 0px rgba(0, 0, 0, .5);
+}
+.imagen-port img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+.img-click{
+	width:10%;
+	height:10%;
+}
+.hover-galeria{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+    transform: scale(0);
+    background: hsl(346,72%,78%,0.6);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria img{
+	width: 30%;
+	height: 30%;
+}
+.hover-galeria p{
+	font-size: 22px;
+}
+.imagen-port:hover .hover-galeria{
+	transform: scale(1);
+}
+/*opiniones de los clientes*/
+.cards{
+	display: flex;
+	justify-content: space-around;
+}
+.cards .card{
+	background: hsl(32, 52%, 60%);
+	display: flex;
+	width: 50%;
+	height: 200px;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 12px;
+	padding: 15px;
+	margin-right: 20px;
+
+}
+.card img{
+	width: 190px;
+	height: 170px;
+	object-fit: cover;
+	border: 3px solid white;
+	border-radius: 50%;
+	display: block;
+	margin-right: 10px;
+}
+.cards .card h4{
+	color: hsl(32, 52%, 35%);
+	font-weight: 600;
+	font-size: 20px;
+}
+.cards .card p{
+	color: 	white;
+}
+/*our team*/
+.nuestro-servicio{
+	background: #f2f2f2;
+}
+.contenido-servicio{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.contenido-serv img{
+	height: 50%;
+	width: 50%;
+	object-fit: cover;
+
+}
+.contenido-serv {
+	text-align: center;
+	width: 50%;
+	margin: 20px;
+}
+.contenido-serv p{
+	font-weight: 300;
+	color:hsl(256, 5%, 44%);
+}
+.contenido-serv h3{
+	color: hsl(32, 52%, 60%);
+}
+
+/*el pie de pagina footer*/
+footer{
+	color:grey;
+	margin:auto;
+	overflow: hidden;
+
+}
+.contenedor-footer{
+	margin:auto;
+	display: flex;
+	width: 90%;
+	justify-content: space-around;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.contenido-pie {
+	margin: 10px 28px;
+	overflow: hidden;
+    max-width: 1000px;
+
+}
+.contenido-pie p{
+	font-size: 16px;
+	font-weight: 200;
+}
+.contenido-pie h4{
+	text-align: center;
+	border-bottom: 3px solid hsl(6, 86%, 37%);
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	overflow:hidden;
+}
+footer h2{
+	text-align: center;
+	font-weight: 300;
+	font-size:20px;
+}
+
+@media screen and (max-width: 900px){
+	
+}
